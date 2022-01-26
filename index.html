@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QR Code Generator</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
+  </head>
+  <body>
+    <h1>QR Code Generator</h1>
+    <div class="form">
+      <p>QR Code Title :</p>
+      <input type="text" id="title">
+      <p>QR Code Content :</p>
+      <textarea name="content" id="content" cols="30" rows="10"></textarea>
+      <p>Background Color</p>
+      <input type="color" name="bg-color" id="bg-color" />
+      <p>Dots Color</p>
+      <input type="color" name="dot-color" id="dot-color" /><br>
+      <button id="start">Generate</button>
+    </div>
+    <div class="result">
+        <canvas id="qrcode"></canvas>
+
+      <button id="download">
+        <svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
+          <path
+            fill="currentColor"
+            d="M5,20H19V18H5M19,9H15V3H9V9H5L12,16L19,9Z"
+          />
+        </svg>
+        download
+      </button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
