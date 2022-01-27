@@ -14,7 +14,7 @@ Additional description about the project and its features.
 
 ## Live Demo
 
-[Live Demo Link](https://https://yassinejoundi.github.io/qrcode-generator-vanillajs/)
+[Live Demo Link](https://yassinejoundi.github.io/qrcode-generator-vanillajs/)
 
 
 
