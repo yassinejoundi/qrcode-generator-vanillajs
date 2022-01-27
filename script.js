@@ -5,18 +5,17 @@ const size = document.querySelector("#range");
 const canvas = document.querySelector("#qr-code");
 const generate = document.querySelector(".primary-btn");
 const btns = document.querySelectorAll(".outline-btn");
-const circles = document.querySelectorAll('.circle')
+const circles = document.querySelectorAll(".circle");
 
-circles[0].style.backgroundColor = foreground.value
-circles[1].style.backgroundColor = background.value
+foreground.value = "#000000"
+background.value = "#FFFFFF"
+foreground.addEventListener("change", () => {
+  document.documentElement.style.setProperty("--foreground", foreground.value);
+});
 
-foreground.addEventListener('change', ()=>{
-  circles[0].style.backgroundColor = foreground.value
-})
-
-background.addEventListener('change', ()=>{
-  circles[1].style.backgroundColor = background.value
-})
+background.addEventListener("change", () => {
+  document.documentElement.style.setProperty("--background", background.value);
+});
 
 generate.addEventListener("click", () => {
   canvas.innerHTML = "";
